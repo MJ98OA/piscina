@@ -1,9 +1,8 @@
 public class Banista extends Thread {
     String nombre;
     boolean sucio=true;
-    public Banista(String nombre){
+    public Banista(String nombre){this.nombre=nombre;}
 
-    }
     @Override
     public void run() {
         Piscina.solicitarAcceso(this);
